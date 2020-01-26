@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { MissionAPI, Mission } from "./mission-interface";
+import { MissionAPI, Mission, MissionSort } from "./mission-interface";
 import Missions from "./missions";
 
 class MissionPanel extends Component {
@@ -10,7 +10,8 @@ class MissionPanel extends Component {
   componentDidMount() {
     fetch(MissionAPI)
       .then(res => res.json())
-      .then((data: Mission) => {
+      .then((data: Mission[]) => data.sort(MissionSort))
+      .then((data: Mission[]) => {
         this.setState({ missions: data });
       })
       .catch(console.error);

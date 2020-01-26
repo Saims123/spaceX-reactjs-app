@@ -1,15 +1,16 @@
 import React from "react";
 import { Mission } from "./mission-interface";
-import { Card, CardDeck, CardGroup, CardColumns } from "react-bootstrap";
+import { Card, CardDeck } from "react-bootstrap";
 import "./mission.css";
 const Missions = ({ missions }: any) => {
   return (
     <div className="missions">
       <h2>Missions</h2>
       <CardDeck>
-        {missions.map((mission: Mission) => (
-          <Card className = "cards">
-            <Card.Body>
+        {missions.map((mission: Mission, index: number) => (
+          // Key is there to ensure that the list are correctly identified in the DOM 
+          <Card key={index} className = "cards">
+            <Card.Body >
               <Card.Title>{mission.mission_name}</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">
                 {mission.manufacturers}
