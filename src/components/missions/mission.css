@@ -1,0 +1,22 @@
+.missions {
+    margin: 0 auto;
+    width: 95vw;
+}
+.cards{
+    display: flex;
+    min-width: 45%;
+    margin: 10px;
+}
+@media only screen and (max-width: 900px) {
+    .cards{
+        display: flex;
+        min-width: 90%;
+        margin: 10px;
+
+    }
+
+    .missions {
+        margin: 0 auto;
+        width: 90vw;
+    }
+}
