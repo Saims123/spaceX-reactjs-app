@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "../home";
 import MissionPanel from "../missions/mission-panel";
 import LaunchPanel from "../launches/launch-panel";
@@ -24,8 +24,8 @@ class NavBarComponent extends Component {
           </Navbar.Brand>
 
           <Nav className="mr-auto">
-            <Nav.Item><Link to="/missions">Missions</Link></Nav.Item>
-            <Nav.Item><Link to="/launches">Launches</Link></Nav.Item>
+            <Nav.Link><Link to="/missions">Missions</Link></Nav.Link>
+            <Nav.Link><Link to="./launches">Launches</Link></Nav.Link>
           </Nav>
         </Navbar>
         <Switch>
