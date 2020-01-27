@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/spaceX-reactjs-app/static/css/main.cad3dd14.chunk.css",
-    "main.js": "/spaceX-reactjs-app/static/js/main.f6a0a9c8.chunk.js",
-    "main.js.map": "/spaceX-reactjs-app/static/js/main.f6a0a9c8.chunk.js.map",
+    "main.js": "/spaceX-reactjs-app/static/js/main.78e8aee8.chunk.js",
+    "main.js.map": "/spaceX-reactjs-app/static/js/main.78e8aee8.chunk.js.map",
     "runtime-main.js": "/spaceX-reactjs-app/static/js/runtime-main.8782af39.js",
     "runtime-main.js.map": "/spaceX-reactjs-app/static/js/runtime-main.8782af39.js.map",
     "static/css/2.47e06e2e.chunk.css": "/spaceX-reactjs-app/static/css/2.47e06e2e.chunk.css",
     "static/js/2.ea539cf1.chunk.js": "/spaceX-reactjs-app/static/js/2.ea539cf1.chunk.js",
     "static/js/2.ea539cf1.chunk.js.map": "/spaceX-reactjs-app/static/js/2.ea539cf1.chunk.js.map",
     "index.html": "/spaceX-reactjs-app/index.html",
-    "precache-manifest.9c534ff48bc05daf540f39f443b77b61.js": "/spaceX-reactjs-app/precache-manifest.9c534ff48bc05daf540f39f443b77b61.js",
+    "precache-manifest.d694ee8dd0d8532e7bfdf9ac4752bfb7.js": "/spaceX-reactjs-app/precache-manifest.d694ee8dd0d8532e7bfdf9ac4752bfb7.js",
     "service-worker.js": "/spaceX-reactjs-app/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/spaceX-reactjs-app/static/css/2.47e06e2e.chunk.css.map",
     "static/css/main.cad3dd14.chunk.css.map": "/spaceX-reactjs-app/static/css/main.cad3dd14.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.47e06e2e.chunk.css",
     "static/js/2.ea539cf1.chunk.js",
     "static/css/main.cad3dd14.chunk.css",
-    "static/js/main.f6a0a9c8.chunk.js"
+    "static/js/main.78e8aee8.chunk.js"
   ]
 }
