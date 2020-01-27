@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBarComponent from './components/navbar/navbar';
 import MissionPanel from './components/missions/mission-panel';
+import LaunchPanel from './components/launches/launch-panel';
 
 
 const App: React.FC = () => {
@@ -16,15 +17,7 @@ const App: React.FC = () => {
         <Route path='launches' />
       </Router>
       <MissionPanel></MissionPanel>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
-          Learn React
-        </a>
-      </header>
+     <LaunchPanel></LaunchPanel>
     </div>
   );
 }
