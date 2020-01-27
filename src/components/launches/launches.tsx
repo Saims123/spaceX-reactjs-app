@@ -5,6 +5,7 @@ import { Card, CardDeck } from "react-bootstrap";
 import noImage from "../../no_image_available.png";
 import "./launches.css";
 import StatusBadge from "./custom-badge";
+import { Link } from 'react-router-dom';
 
 const LaunchCards = ({ launches }: any) => {
   return (
@@ -13,7 +14,9 @@ const LaunchCards = ({ launches }: any) => {
       <CardDeck>
         {launches.map((launch: Launch, index: number) => (
           // Key is there to ensure that the list are correctly identified in the DOM
+          <Link to={`/launch/${launch.flight_number}`}>
           <Card key={index} className="launch-cards">
+
             <Card.Img
               variant="top"
               src={
@@ -37,6 +40,7 @@ const LaunchCards = ({ launches }: any) => {
               </Card.Subtitle>
               <Card.Text>{launch.details}</Card.Text>
             </Card.Body>
+            </Link>
           </Card>
         ))}
         ;
