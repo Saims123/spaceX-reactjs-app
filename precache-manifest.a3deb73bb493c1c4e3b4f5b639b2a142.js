@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1dd79044887894bb9d1bf6c080197ed2",
+    "revision": "791d0e0e91c34cf9e4dab603338c85da",
     "url": "/spaceX-reactjs-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spaceX-reactjs-app/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "6974b8c7037b4ed594a1",
+    "revision": "0d02e3332ec11155d999",
     "url": "/spaceX-reactjs-app/static/css/main.cad3dd14.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spaceX-reactjs-app/static/js/2.0b9be608.chunk.js.LICENSE"
   },
   {
-    "revision": "6974b8c7037b4ed594a1",
-    "url": "/spaceX-reactjs-app/static/js/main.2fdd686f.chunk.js"
+    "revision": "0d02e3332ec11155d999",
+    "url": "/spaceX-reactjs-app/static/js/main.0472e8f6.chunk.js"
   },
   {
     "revision": "a1c6c1551b7a4f267bc2",
