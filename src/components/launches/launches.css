@@ -1,6 +1,6 @@
 .launch-cards{
     display: flex;
-    min-width: 15vw;
+    min-width: 20vw;
     margin: 10px;
     padding: 10px;
     cursor: pointer;

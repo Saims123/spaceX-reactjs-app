@@ -1,11 +1,7 @@
-import React, { Component } from "react";
-import {
-  LaunchesAPI,
-  Launch,
-  LaunchSortByLatestDate
-} from "./launch-interface";
-import LaunchCards from "./launches";
-import { Spinner } from "react-bootstrap";
+import React, { Component } from 'react';
+import { LaunchesAPI, Launch, LaunchSortByLatestDate } from './launch-interface';
+import LaunchCards from './launches';
+import { Spinner } from 'react-bootstrap';
 
 class LaunchPanel extends Component {
   state = {
@@ -25,15 +21,15 @@ class LaunchPanel extends Component {
     // Async data/UI handling, be default check if data has been loaded, then attempt to render LauncherCards component
     if (!this.state.isLoaded) {
       return (
-        <Spinner animation="border" role="status">
-          <span className="sr-only">Loading...</span>
+        <Spinner animation='border' role='status'>
+          <span className='sr-only'>Loading...</span>
         </Spinner>
       );
     }
     return <LaunchCards launches={this.state.launches} />;
   }
 
-  fetchLaunchData() {
+  async fetchLaunchData() {
     return fetch(LaunchesAPI)
       .then(res => res.json())
       .then((data: Launch[]) => data.sort(LaunchSortByLatestDate));

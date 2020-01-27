@@ -31,8 +31,8 @@ class NavBarComponent extends Component {
           <Route exact path='/launches'>
             <LaunchPanel />
           </Route>
-          <Route exact path='/launch/:flight_number'>
-            <FullDetailedLaunch />
+          <Route exact path='/launch/:flight_number' component={FullDetailedLaunch}>
+            
           </Route>
         </Switch>
       </Router>
