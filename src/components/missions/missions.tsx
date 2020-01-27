@@ -1,7 +1,7 @@
 import React from "react";
 import { Mission } from "./mission-interface";
 import { Card, CardDeck } from "react-bootstrap";
-import "./mission.css";
+import "./mission-styling.css";
 const MissionCards = ({ missions }: any) => {
   return (
     <div className="missions">

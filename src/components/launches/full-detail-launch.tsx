@@ -86,7 +86,7 @@ class FullDetailedLaunch extends Component<any> {
     super(props);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     let flightNumber = this.props.match.params.flight_number;
     this.fetchOneLaunchData(flightNumber)
       .then((data: Launch) => {
