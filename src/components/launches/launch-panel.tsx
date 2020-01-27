@@ -26,7 +26,14 @@ class LaunchPanel extends Component {
         </Spinner>
       );
     }
-    return <LaunchCards launches={this.state.launches} />;
+    return (
+      // For experiemental purposes, FullDetailLaunch component will not be placed here for the time being
+      // However for simplicity and flow, adding Router and Switch here for the two child compoennt would be more logical
+      <>
+        <h2>All launches</h2>
+        <LaunchCards launches={this.state.launches} />
+      </>
+    );
   }
 
   async fetchLaunchData() {

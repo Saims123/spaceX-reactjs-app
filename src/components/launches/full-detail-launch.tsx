@@ -96,7 +96,6 @@ class FullDetailedLaunch extends Component<any> {
   }
   render() {
     if (this.state.isLoaded) {
-      console.log(this.state.launchData);
       return (
         <div>
           <LaunchFullView launch={this.state.launchData} />
@@ -107,6 +106,7 @@ class FullDetailedLaunch extends Component<any> {
       <Spinner animation='border' role='status'>
         <span className='sr-only'>Loading...</span>
       </Spinner>
+
     );
   }
 
