@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "817f4a4dd00b50b37c417e3e00096e02",
+    "revision": "4a3d260068c70b9bba6a718b36f97b8f",
     "url": "/spaceX-reactjs-app/index.html"
   },
   {
-    "revision": "e8488c09cea4311fa76b",
+    "revision": "ed2f03e259ab682502cc",
     "url": "/spaceX-reactjs-app/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "95ae187e0ba325d2633d",
+    "revision": "195d03211593d9c38f09",
     "url": "/spaceX-reactjs-app/static/css/main.cad3dd14.chunk.css"
   },
   {
-    "revision": "e8488c09cea4311fa76b",
-    "url": "/spaceX-reactjs-app/static/js/2.3b297269.chunk.js"
+    "revision": "ed2f03e259ab682502cc",
+    "url": "/spaceX-reactjs-app/static/js/2.ea539cf1.chunk.js"
   },
   {
     "revision": "2a9ca498f958dc914ee8331f2f1e5a45",
-    "url": "/spaceX-reactjs-app/static/js/2.3b297269.chunk.js.LICENSE"
+    "url": "/spaceX-reactjs-app/static/js/2.ea539cf1.chunk.js.LICENSE"
   },
   {
-    "revision": "95ae187e0ba325d2633d",
-    "url": "/spaceX-reactjs-app/static/js/main.1939f44b.chunk.js"
+    "revision": "195d03211593d9c38f09",
+    "url": "/spaceX-reactjs-app/static/js/main.f6a0a9c8.chunk.js"
   },
   {
     "revision": "a1c6c1551b7a4f267bc2",
