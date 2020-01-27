@@ -8,7 +8,9 @@ class Home extends Component {
         <h1>SpaceX with ReactJS</h1>
         <p>
           This is a simple spaceX web app written with ReactJS in typescript.
+          Powered with <a href="https://react-bootstrap.github.io/">React Bootstrap</a>.
           See API documentation at <a href="https://documenter.getpostman.com/view/2025350/RWaEzAiG?version=latest">SpaceX API Docs</a>
+
         </p>
       </Jumbotron>
     );
