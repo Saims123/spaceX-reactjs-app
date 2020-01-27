@@ -1,4 +1,4 @@
-import moment, * as momemt from 'moment';
+import moment from 'moment';
 export type Launch = {
     mission_id: string[];
     flight_number: number;
