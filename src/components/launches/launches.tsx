@@ -3,13 +3,13 @@ import Moment from 'react-moment';
 import { Launch } from './launch-interface';
 import { Card, CardDeck } from 'react-bootstrap';
 import noImage from '../../no_image_available.png';
-import './launches.css';
+import './launches-styling.css';
 import StatusBadge from './custom-badge';
 import { Link } from 'react-router-dom';
 
 const LaunchCards = ({ launches }: any) => {
   return (
-    <div className='missions'>
+    <div>
       <h2>All launches</h2>
       <CardDeck>
         {launches.map((launch: Launch, index: number) => (
@@ -38,7 +38,6 @@ const LaunchCards = ({ launches }: any) => {
                     Status :<StatusBadge _launch={launch}></StatusBadge>
                   </div>
                 </Card.Subtitle>
-                <Card.Text>{launch.details}</Card.Text>
               </Card.Body>
             </Link>
           </Card>

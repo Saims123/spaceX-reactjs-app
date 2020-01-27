@@ -4,12 +4,14 @@ import { Spinner, Card, Button } from 'react-bootstrap';
 import noImage from '../../no_image_available.png';
 import Moment from 'react-moment';
 import StatusBadge from './custom-badge';
+import './launches-styling.css';
 
 const LaunchFullView = ({ launch }: any) => {
-
   return (
     <Card>
+      <h1>Detailed View on {launch.mission_name}</h1>
       <Card.Img
+        className='logo'
         variant='top'
         src={
           launch.links.mission_patch == null // Shorthand to check whether if there's image link from the data stream, if not use the placeholder
@@ -20,7 +22,7 @@ const LaunchFullView = ({ launch }: any) => {
       <Card.Body>
         <Card.Title>{launch.mission_name}</Card.Title>
         <Card.Subtitle className='mb-2 text-muted'>
-          <div>Mission ID : {launch.mission_id}</div>
+          <div>Mission ID : {launch?.mission_id}</div>
           <br />
           <div>
             Launch : <Moment date={launch.launch_date_utc} />
@@ -33,22 +35,37 @@ const LaunchFullView = ({ launch }: any) => {
           </div>
         </Card.Subtitle>
         <Card.Text>{launch.details}</Card.Text>
-
+        <div className='failed-details'>
+          { // Shorthand to display failure details only if it's not successful and has not been launched yet
+          (!launch.launch_success && !launch.upcoming) && (
+            <div>
+              <b>Failure reasons</b> <br /> <p>{launch?.launch_failure_details?.reason || ''}</p>
+            </div>
+          )}
+        </div>
         <div className='links'>
           <h4>Links</h4>
-          {launch.links.wikipedia !== null && (
-            <Button variant='primary' href={launch.links.wikipedia}>
-              Wikipedia
+
+          {// Shorthand to display a placeholder if there's no link from the data streamx
+          launch.links.article_link == null && launch.links.wikipedia == null && launch.links.video_link == null ? (
+            <p>No link detected</p>
+          ) : (
+            ''
+          )}
+
+          {launch.links.article_link !== null && (
+            <Button className='link-button' variant='primary' href={launch.links.article_link}>
+              SpaceX Article
             </Button>
           )}
           {launch.links.wikipedia !== null && (
-            <Button variant='primary' href={launch.links.wikipedia}>
+            <Button className='link-button' variant='primary' href={launch.links.wikipedia}>
               Wikipedia
             </Button>
           )}
 
           {launch.links.video_link !== null && (
-            <Button variant='primary' href={launch.links.video_link}>
+            <Button className='link-button' variant='primary' href={launch.links.video_link}>
               Youtube
             </Button>
           )}
@@ -56,7 +73,6 @@ const LaunchFullView = ({ launch }: any) => {
       </Card.Body>
     </Card>
   );
-
 };
 
 class FullDetailedLaunch extends Component<any> {
@@ -80,7 +96,7 @@ class FullDetailedLaunch extends Component<any> {
   }
   render() {
     if (this.state.isLoaded) {
-          console.log(this.state.launchData);
+      console.log(this.state.launchData);
       return (
         <div>
           <LaunchFullView launch={this.state.launchData} />

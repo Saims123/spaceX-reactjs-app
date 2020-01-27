@@ -1,16 +1,20 @@
 import moment from 'moment';
 export type Launch = {
-    mission_id: string[];
-    flight_number: number;
-    launch_date_utc: string;
-    mission_name: string;
-    launch_year: number;
-    details: string;
-    flickr_images : string[];
-    launch_site: LaunchSite;
-    launch_success: boolean;
-    upcoming: boolean;
-    links: Links
+  mission_id: string[];
+  flight_number: number;
+  launch_date_utc: string;
+  mission_name: string;
+  launch_year: number;
+  details: string;
+  flickr_images: string[];
+  launch_site: LaunchSite;
+  launch_success: boolean;
+  launch_failure_details: FailureDetail
+  upcoming: boolean;
+  links: Links;
+};
+interface FailureDetail{
+    reason: string;
 }
 
 interface LaunchSite {
@@ -22,6 +26,7 @@ interface Links{
     mission_patch: string;
     wikipedia: string;
     video_link: string;
+    article_link: string;
 }
 
 export const LaunchesAPI = "https://api.spacexdata.com/v3/launches";

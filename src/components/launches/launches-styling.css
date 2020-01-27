@@ -9,3 +9,12 @@
 .launch-cards:hover{
     background-color: rgb(142, 209, 230);
 }
+
+.link-button {
+    margin : 10px;
+}
+
+.logo {
+    max-width: 40vw;
+    margin : 0 auto;
+}
