@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { LaunchesAPI, Launch, LaunchSortByLatestDate } from "./launch-interface";
-import Launches from "./launches";
+import LaunchCards from "./launches";
 import { Spinner } from "react-bootstrap";
 
 class LaunchPanel extends Component {
@@ -25,7 +25,7 @@ class LaunchPanel extends Component {
         </Spinner>
       );
     }
-    return <Launches launches={this.state.launches} />;
+    return <LaunchCards launches={this.state.launches} />;
   }
 
   fetchLaunchData() {

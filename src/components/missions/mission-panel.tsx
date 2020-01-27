@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { MissionAPI, Mission, MissionSort } from "./mission-interface";
-import Missions from "./missions";
+import MissionCards from "./missions";
 
 class MissionPanel extends Component {
   state = {
@@ -17,7 +17,7 @@ class MissionPanel extends Component {
       .catch(console.error);
   }
   render() {
-    return <Missions missions={this.state.missions} />;
+    return <MissionCards missions={this.state.missions} />;
   }
 }
 

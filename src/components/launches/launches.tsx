@@ -36,7 +36,7 @@ const StatusBadge = ({ _launch }: any) => {
   );
 };
 
-const Launches = ({ launches }: any) => {
+const LaunchCards = ({ launches }: any) => {
   return (
     <div className="missions">
       <h2>All launches</h2>
@@ -75,4 +75,4 @@ const Launches = ({ launches }: any) => {
   );
 };
 
-export default Launches;
+export default LaunchCards;

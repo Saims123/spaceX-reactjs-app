@@ -2,7 +2,7 @@ import React from "react";
 import { Mission } from "./mission-interface";
 import { Card, CardDeck } from "react-bootstrap";
 import "./mission.css";
-const Missions = ({ missions }: any) => {
+const MissionCards = ({ missions }: any) => {
   return (
     <div className="missions">
       <h2>Missions</h2>
@@ -26,4 +26,4 @@ const Missions = ({ missions }: any) => {
   );
 };
 
-export default Missions;
+export default MissionCards;
