@@ -1,6 +1,6 @@
 {
   "name": "rocket-reactjs-app",
-  "homepage" : "https://Saims123.github.io/spaceX-reactjs-app",
+  "homepage": "https://Saims123.github.io/spaceX-reactjs-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
