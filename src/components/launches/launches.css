@@ -1,6 +1,11 @@
 .launch-cards{
     display: flex;
-    min-width: 20%;
+    min-width: 15vw;
     margin: 10px;
-    cursor: grab;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.launch-cards:hover{
+    background-color: rgb(142, 209, 230);
 }

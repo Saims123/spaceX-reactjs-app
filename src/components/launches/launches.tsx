@@ -47,7 +47,7 @@ const LaunchCards = ({ launches }: any) => {
             <Card.Img
               variant="top"
               src={
-                launch.links.mission_patch == null
+                launch.links.mission_patch == null // Shorthand to check whether if there's image link from the data stream, if not use the placeholder
                   ? noImage
                   : launch.links.mission_patch
               }

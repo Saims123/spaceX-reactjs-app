@@ -1,5 +1,9 @@
 import React, { Component } from "react";
-import { LaunchesAPI, Launch, LaunchSortByLatestDate } from "./launch-interface";
+import {
+  LaunchesAPI,
+  Launch,
+  LaunchSortByLatestDate
+} from "./launch-interface";
 import LaunchCards from "./launches";
 import { Spinner } from "react-bootstrap";
 
@@ -18,6 +22,7 @@ class LaunchPanel extends Component {
   }
 
   render() {
+    // Async data/UI handling, be default check if data has been loaded, then attempt to render LauncherCards component
     if (!this.state.isLoaded) {
       return (
         <Spinner animation="border" role="status">
